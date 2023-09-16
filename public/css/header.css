@@ -1,0 +1,173 @@
+.header {
+    /* background-color: gray; */
+    margin-bottom: 10%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.organisasi {
+    color: var(--main);
+    text-align:center;
+    /* leading-trim: both;
+    text-edge: cap; */
+    font-family: "Noto Sans KR";
+    font-size: 150px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 22px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.running-text{
+    width: 100%;
+}
+.running-text .marquee{
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.marquee span{
+    color: var(--main);
+    display: inline-block;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+    0%{
+        transform: translate(0,0);
+    }
+    100%{
+        transform: translate(-100%,0);
+    }
+}
+
+.header .main-foto {
+    margin-top: 20px;
+}
+.header .main-foto img {
+    width: 100%;
+}
+.header .textMiring{
+    position: absolute;
+    top:140%;
+    justify-content: center;
+    width: 100%;
+}
+.textMiring .marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    height: 100%;
+    background-color: var(--red);
+    box-shadow: 0 -2px 2px rgb(37, 37, 37), 0 2px 2px rgb(37, 37, 37);
+
+}
+
+
+.miring-kiri .marquee span{
+    font-size: 32px;
+    color: var(--white1);
+    display: inline-block;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    line-height: 60px;
+    animation: marquee 10s linear infinite;
+}
+.miring-kanan .marquee span{
+    font-size: 32px;
+    color: var(--white1);
+    display: inline-block;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    line-height: 60px;
+    animation: Kanan 10s linear infinite;
+}
+@keyframes Kanan {
+    0%{
+        transform: translate(-100%,0);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+.textMiring .miring-kiri {
+    transform: translateY(-60px) rotate(-3.5deg);
+}
+.textMiring .miring-kanan {
+    position: relative;
+    transform: rotate(3.5deg);
+}
+
+
+/* Break point
+    1. 420 px
+    2. 640 px
+    3. 768 px
+    4. 1024 px
+*/
+
+@media screen and (max-width:1024px) {
+    .organisasi {
+        margin-right: -2%;
+        font-size: 80px;
+    }
+    .marquee span{
+        font-size: 20px;
+    }
+    .header .textMiring{
+        top: 60%;
+    }
+    .miring-kanan .marquee span{
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .miring-kiri .marquee span{
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .organisasi {
+        margin-top: 3%;
+        margin-right: -3%;
+        font-size: 33px;
+        letter-spacing: 15px;
+    }
+    .marquee span{
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .header .main-foto{
+        margin-top: 10px;
+    }
+    .header .textMiring{
+        top: 45%;
+    }
+    .textMiring .miring-kiri {
+        transform: translateY(-38px) rotate(-3deg);
+    }
+    .textMiring .miring-kanan {
+        position: relative;
+        transform: rotate(4.5deg);
+    }
+
+}
+
+@media screen and (max-width:640px) {
+
+}
+
+@media screen and (max-width:420px) {
+}
