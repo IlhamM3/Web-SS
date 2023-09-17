@@ -129,7 +129,7 @@
 .info-event a {
     color: var(--main);
     border: 2px solid var(--hover);
-    padding: 10px 0;
+    padding: 10px 0;    
     text-align: center;
     text-decoration: none;
     font-size: 16px;
@@ -144,7 +144,7 @@
         transform: translate(-100%,0);
     }
 } */
-@media screen and (max-width:768px) {
+@media screen and (max-width:900px) {
     .Title h1{
         font-size: 50px;
     }
@@ -154,4 +154,27 @@
         grid-template-columns: auto;
 
     }
+}
+@media screen and (max-width:420px)
+{
+    .Title h1{
+        font-size:26px;
+    }
+
+    /* list event */
+    .list-event{
+        grid-template-columns:370px;    
+    }
+    .info-event .judul{
+        font-size:12px;
+        line-height:90%;
+    }
+    .detai-event .deskripsi{
+        font-size:9px;
+        line-height:100%;
+    }
+    .info-event a{
+        font-size:10px;
+    }
+
 }

@@ -147,20 +147,34 @@
   }
 
 }
-@media(max-width: 640px){
+@media screen and (max-width: 640px){
+
+  .card-member{
+    margin-top:80px;
+  }
+  .img-container .img-caption{
+    padding:2px;
+  }
+  .img-container .img-caption h4{
+    font-size:7px;
+    margin-bottom:5px;
+  }
+  .img-container .img-caption p{
+    font-size:7px;
+  }
   .list-divisi ul li a {
     font-size: 9px;
+    height:100%;
   } 
   .foto{
-      grid-template-columns: repeat(4, 1fr);
-      align-items: center;
+      margin-top:1.4rem;
       gap: 7px;
   }
   .img-container {
-    height: 190px;
+    height: 110px;
   }
   .img-container .img-caption {
-    top: 130px;
+    top: 83px;
   }
   .img-caption h4, .img-caption p {
     font-size: 10px;
