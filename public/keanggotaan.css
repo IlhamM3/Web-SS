@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden;
+}
 .my-button{
   border: 5px;
 }
@@ -148,7 +151,6 @@
 
 }
 @media screen and (max-width: 640px){
-
   .card-member{
     margin-top:80px;
   }

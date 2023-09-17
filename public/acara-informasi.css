@@ -1,4 +1,7 @@
 /* ===== ACARA DAN INFORMASI ====== */
+body {
+    overflow-x: hidden;
+}
 .info-acara {
     margin-bottom: 5%;
     margin-top: 20px;
