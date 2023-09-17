@@ -409,6 +409,12 @@
 
 }
 
-@media screen and (max-width:420px) {
-
+@media screen and (max-width:361px) {
+    .divisisection{
+        margin-top:-2rem;
+    }
+    .divisi{
+        margin-left:-0.9rem;
+        margin-right:-0.6rem;
+    }
 }

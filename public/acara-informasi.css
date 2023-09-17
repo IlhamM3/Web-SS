@@ -176,5 +176,9 @@
     .info-event a{
         font-size:10px;
     }
-
+}
+@media screen and (max-width:361px) {
+    .Title h1{
+        font-size:24px;
+    }
 }
