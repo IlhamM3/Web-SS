@@ -169,5 +169,8 @@
 
 }
 
-@media screen and (max-width:420px) {
+@media screen and (max-width:361px) {
+    .organisasi{
+        font-size:26px
+    }
 }
