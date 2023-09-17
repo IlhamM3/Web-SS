@@ -163,7 +163,7 @@
 
     /* list event */
     .list-event{
-        grid-template-columns:370px;    
+        grid-template-columns:340px;    
     }
     .info-event .judul{
         font-size:12px;
