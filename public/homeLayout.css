@@ -54,6 +54,11 @@ body {
     margin-left: 5%;
     width: 50%;
 }
+.containerTentang iframe{
+    width:560px;
+    height:315px;
+    border-radius:15px;
+}
 
 .deskripsiTentang {
     text-align: justify;
@@ -405,11 +410,14 @@ body {
         width: 20rem;
 
     }
+    .containerTentang iframe{
+        width:340px;
+        height:215px;
+    }
 
 }
 
 @media screen and (max-width:640px) {
-
 }
 
 @media screen and (max-width:361px) {
